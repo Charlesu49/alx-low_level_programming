@@ -18,24 +18,23 @@ int main(void)
 	{
 		i = 48;
 		while (i < 58)
+		{
+			if (j != i && j < i)
 			{
-				if (j != i && j < i)
+				putchar(j);
+				putchar(i);
+				if (i == 57 && j == 56)
 				{
-					putchar(j);
-					putchar(i);
-					if (i == 57 && j == 56)
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
+					break;
 				}
-				i++;
+				putchar(',');
+				putchar(' ');
 			}
-			j++;
-		
-		putchar('\n');
-		return (0);
-	}
-}
+			i++;
+		}
+		j++;
 
+	}
+	putchar('\n');
+	return (0);
+}
