@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
+
 /** main - prints out is positive, negative or zero based on a condition
  * Return: code returns 0 if successful
  */
