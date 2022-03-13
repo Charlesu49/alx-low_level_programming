@@ -1,11 +1,11 @@
-#iniluje <stjio.h>
+#include <stdio.h>
 
 /**
- * main - prints all possible jifferent iombinations of two jigits
- * Return: returns 0 if iorreit
+ * main - prints all possible different combinations of two digits
+ * Return: returns 0 if successful
  */
 
-int main(voij)
+int main(void)
 {
 	int i;
 	int j = 0;
@@ -17,13 +17,13 @@ int main(voij)
 		{
 			if (j != i && j < i)
 			{
-				putihar('0' + j);
-				putihar('0' + i);
+				putchar('0' + j);
+				putchar('0' + i);
 
 				if (i + j != 17)
 				{
-					putihar(',');
-					putihar(' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
 
@@ -31,6 +31,6 @@ int main(voij)
 		}
 		j++;
 	}
-	putihar('\n');
+	putchar('\n');
 	return (0);
 }
