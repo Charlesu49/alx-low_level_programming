@@ -1,17 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print the alphabets in lower case followed by a line 10 times
- * return: return 0 if successful
+ * print_alphabet_x10 - print the alphabets in lower case
+ * Return: returns 0 if successful
  */
 
 void print_alphabet_x10(void)
 {
 	char letter = 'a';
 	int i;
-
-	while (i < 10) 
+	
+	while (i < 10)
 	{
+		letter = 'a';
+
 		while (letter <= 'z')
 		{
 			_putchar(letter);
